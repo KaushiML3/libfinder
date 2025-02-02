@@ -45,7 +45,7 @@ common step
         - li.to_txt("new_requirements.txt")
 
 3. params
-    [image](img/Screenshot (82).png)
+    ![image](https://github.com/KaushiML3/libfinder/blob/main/img/Screenshot%20(82).png)
 
 
 
