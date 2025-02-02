@@ -16,37 +16,53 @@ pip install .
 ## Uses
 
 common step
- - pip install libfinder
+ ```bash
+  pip install libfinder
+```
 
 1. Call the functions
-    - import libfinder  
+   ```python
+     import libfinder
+   ```
 
     1. Get the module names
-        - lib_name=libfinder.get_lib_name() **or** libfinder.get_lib_name()
-        - print(lib_name)
+        ```python
+          lib_name=libfinder.get_lib_name() **or** libfinder.get_lib_name()
+          print(lib_name)
+        ```
 
     2. Get the module versions and save the new_requirements.txt file
-        - lib_ver=libfinder.get_lib_ver() **or** libfinder.get_lib_ver()
-        - print(lib_ver)
+        ```python
+          lib_ver=libfinder.get_lib_ver() **or** libfinder.get_lib_ver()
+          print(lib_ver)
+        ```
 
-2. Use libfinder class  
+3. Use libfinder class  
      ```python
       import libfinder
       ```
 
     1. Create object
-        - lib=libfinder.libraryfinder()
+       ```python
+         lib=libfinder.libraryfinder()
+       ```
 
-    2. Get the module names
-        - lib.get_lib_name()
+    3. Get the module names
+        ```python
+          lib.get_lib_name()
+        ```
 
-    3. Get the module versions
-        - lib.get_lib_ver()
+    4. Get the module versions
+         ```python
+          lib.get_lib_ver()
+         ```
 
-    4. Get the .txt file 
-        - li.to_txt("new_requirements.txt")
+    5. Get the .txt file 
+        ```python
+          lib.to_txt("new_requirements.txt")
+        ```
 
-3. params
+4. params
    
      ![image](https://github.com/KaushiML3/libfinder/blob/main/img/Screenshot%20(82).png)
 
