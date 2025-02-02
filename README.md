@@ -30,7 +30,9 @@ common step
         - print(lib_ver)
 
 2. Use libfinder class  
-    - import libfinder
+     ```python
+      import libfinder
+      ```
 
     1. Create object
         - lib=libfinder.libraryfinder()
