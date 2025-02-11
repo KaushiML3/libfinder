@@ -42,11 +42,11 @@ jobs:
                 path: dist
 
             - name: Download a distribution artifact
-              uses: actions/download-artifact@v2
+              uses: actions/download-artifact@v3
               with:
                 name: dist-package-3.9
                 path: dist
-                
+
             - name: Publish distribution 📦 to PyPI
               uses: pypa/gh-action-pypi-publish@master
               with:
