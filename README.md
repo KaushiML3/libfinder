@@ -1,3 +1,5 @@
+[![Publish Python distributions to PyPI and TestPyPI](https://github.com/KaushiML3/libfinder/actions/workflows/python-publish.yml/badge.svg)](https://github.com/KaushiML3/libfinder/actions/workflows/python-publish.yml)
+
 # libfinder
 
 `libfinder` is a simple Python package that helps check if a library is installed in your python jupyter environment.
