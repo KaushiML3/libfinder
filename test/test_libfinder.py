@@ -1,12 +1,20 @@
 import pandas as pd
 import numpy as np
+import logging
+import pkg_resources
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
 
 from libfinder import libraryfinder,get_lib_name,get_lib_version
 
 def test_libfinder():
     
     print("Library name : ",get_lib_name())
-    print("Library versions : ",get_lib_version)
+
+    print("Library name history true : ",get_lib_name())
+  
+    print("Library versions : ",get_lib_version())
 
 
     lib=libraryfinder()
@@ -17,3 +25,5 @@ def test_libfinder():
 
 
 
+if __name__=="__main__" :
+    test_libfinder()

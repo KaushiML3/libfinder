@@ -52,7 +52,7 @@ class libraryfinder():
         ipython = get_ipython()
 
         # Get the input history
-        history = ipython.history_manager.get_range()  # Get all input cells
+        history = ipython.history_manager.get_range()  
 
         # Set to store unique module names
         imported_modules = set()

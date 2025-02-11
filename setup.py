@@ -17,13 +17,16 @@ def get_requirements(file_path:str)->List[str]:
     
     return requirements
 
+
+#packages=find_packages(),
+#"License :: OSI Approved :: MIT License",
 setup(
     name="libfinder",
-    version="0.1.0",
-    packages=find_packages(),
+    version="0.1.1",
+    packages=["libfinder"],
     install_requires=get_requirements("requirements.txt"),
     author="Kaushi Gihan",
-    author_email="kaushigihanml@gmail.com.com",
+    author_email="kaushigihanml@gmail.com",
     description="A simple package to check if a Python library is installed in a Jupyter notebook.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

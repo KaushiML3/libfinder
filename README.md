@@ -1,6 +1,6 @@
 # libfinder
 
-`libfinder` is a simple Python package that helps check if a library is installed in your environment.
+`libfinder` is a simple Python package that helps check if a library is installed in your python jupyter environment.
 
 ## 📌 Installation
 
