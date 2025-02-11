@@ -52,14 +52,6 @@ jobs:
                 name: dist-package-3.9
                 path: dist
 
-            - name: Publish distribution 📦 to Test PyPI
-              uses: pypa/gh-action-pypi-publish@master
-              with:
-                skip_existing: true
-                user: __token__
-                password: ${{ secrets.pypi_libfinder_test }}
-                repository_url: https://test.pypi.org/legacy/
-    
             - name: Publish distribution 📦 to PyPI
               uses: pypa/gh-action-pypi-publish@release/v1
               with:

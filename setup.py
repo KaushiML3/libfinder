@@ -22,7 +22,7 @@ def get_requirements(file_path:str)->List[str]:
 #"License :: OSI Approved :: MIT License",
 setup(
     name="libfinder",
-    version="0.1.5",
+    version="0.0.1",
     packages=["libfinder"],
     install_requires=get_requirements("requirements.txt"),
     author="Kaushi Gihan",
