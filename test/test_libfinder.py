@@ -10,11 +10,11 @@ from libfinder import libraryfinder,get_lib_name,get_lib_version
 
 def test_libfinder():
     
-    print("Library name : ",get_lib_name())
+    print("Library name : ",get_lib_name(history=False))
 
-    print("Library name history true : ",get_lib_name())
+    print("Library name history true : ",get_lib_name(history=True))
   
-    print("Library versions : ",get_lib_version())
+    print("Library versions : ",get_lib_version(history=True))
 
 
     lib=libraryfinder()
