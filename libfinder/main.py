@@ -87,7 +87,7 @@ class libraryfinder():
 
 
 
-    def get_lib_name(self,import_texts=None,history=False):
+    def get_lib_name(self,import_texts=None,history=True):
         self.library_names=[]
 
         if import_texts is not None:
@@ -118,7 +118,7 @@ class libraryfinder():
         return self.library_names
 
 
-    def get_lib_version(self,import_texts=None,history=False):#get_lib_version
+    def get_lib_version(self,import_texts=None,history=True):#get_lib_version
         # Initialize lists to store library names and versions
         Library=[]
         versions=[]
@@ -317,7 +317,7 @@ def libname_get_cell_2():
 
 
 
-def get_lib_name(import_texts=None,history=False):
+def get_lib_name(import_texts=None,history=True):
     
     library_names=[]
 
@@ -349,7 +349,7 @@ def get_lib_name(import_texts=None,history=False):
     return library_names
 
 
-def get_lib_version(import_texts=None,history=False,file_path=None):
+def get_lib_version(import_texts=None,history=True,file_path=None):
     # Initialize lists to store library names and versions
     Library=[]
     versions=[]
