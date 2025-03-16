@@ -289,27 +289,29 @@ def libname_get_cell_2():
 
     # Regex pattern to match import statements
     import_pattern = re.compile(r'^\s*(?:import|from)\s+([a-zA-Z_][a-zA-Z0-9_\.]*)', re.MULTILINE)
-
-    # Check each input cell for import statements
-    for entry in history:
-        # Ensure that each entry is valid and contains an input string at the expected position
-        if len(entry) > 2:
-            input_str = entry[2]
-
-            # Search for import statements in the input string
-            matches = import_pattern.findall(input_str)
-
-            for module in matches:
-                # Only add the base module name to avoid duplicates from submodules
-                base_module = module.split('.')[0]
-                imported_modules.add(base_module)
-
-    # Display the imported modules
-    #print("Imported Modules in this Notebook:")
-    for module in sorted(imported_modules):
-      if module in unwanted_lib:
-        imported_modules.remove(module)
-    #print(list(imported_modules))
+    if history is Not None:
+        # Check each input cell for import statements
+        for entry in history:
+            # Ensure that each entry is valid and contains an input string at the expected position
+            if len(entry) > 2:
+                input_str = entry[2]
+    
+                # Search for import statements in the input string
+                matches = import_pattern.findall(input_str)
+    
+                for module in matches:
+                    # Only add the base module name to avoid duplicates from submodules
+                    base_module = module.split('.')[0]
+                    imported_modules.add(base_module)
+    
+        # Display the imported modules
+        #print("Imported Modules in this Notebook:")
+        for module in sorted(imported_modules):
+          if module in unwanted_lib:
+            imported_modules.remove(module)
+        #print(list(imported_modules))
+    else:
+        pass
 
     return list(imported_modules)
 
