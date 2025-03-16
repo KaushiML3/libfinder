@@ -289,7 +289,7 @@ def libname_get_cell_2():
 
     # Regex pattern to match import statements
     import_pattern = re.compile(r'^\s*(?:import|from)\s+([a-zA-Z_][a-zA-Z0-9_\.]*)', re.MULTILINE)
-    if history is Not None:
+    if history is not None:
         # Check each input cell for import statements
         for entry in history:
             # Ensure that each entry is valid and contains an input string at the expected position
